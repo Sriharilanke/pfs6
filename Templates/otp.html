@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url('https://img.freepik.com/free-vector/enter-otp-concept-illustration_114360-7897.jpg?t=st=1733563882~exp=1733567482~hmac=dd35e400a206a5b2b2de63aa60eb252d79224a3b2a8271d6fc0828c2fdb8840a&w=740');
+      background-position: center ;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+    input{
+      border-radius: 12px;
+      box-shadow: 3px;
+      background-color: rgb(77, 207, 96);
+    }
+    h1 {
+      text-align: center;
+    }
+    .one{
+      text-align: center;
+      margin-left: 15px;
+      padding-left: 10%;
+      padding-right: 25%;
+      padding-top: 2%;
+
+    }
+    .one button {
+      margin-top: 2%;
+      background-color: green;
+      color: white;
+      border-radius: 10px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    .one button{
+      margin-top: 2%;
+    }
+  
+  </style>
+</head>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<center>
+  <h1>{{ message }}</h1>
+</center>
+{% endfor %}
+
+{% endif %}
+{% endwith %}
+
+<body>
+  
+  <form method="post">
+    <div class="one">
+      <h1>OTP</h1>
+      <label>Enter OTP</label>
+      <input type="text" name="otp" placeholder="enter otp" /> <br>
+      <button type="submit">submit</button>
+    </div>
+  </form>
+</body>
+
+</html>

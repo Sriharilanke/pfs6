@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-vector/add-files-concept-illustration_114360-341.jpg?t=st=1733565913~exp=1733569513~hmac=b1fc83177302e5c2241db1574f01377cf2a930ddc301addc77a6160de126575e&w=740');
+            background-repeat: no-repeat;
+        
+        }
+        .one{
+            text-align: center;
+            margin-top: 18%;
+            margin-left: 25%;
+            font-weight: bold;
+        }
+        .one input{
+            padding-top: 2%;
+        }
+        button{
+            margin-top: 3%;
+            padding: 1%;
+            background-color: aquamarine;
+            color: blue;
+
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+</head> -->
+
+{% extends 'dashboard.html' %}
+{% block addcss %}
+
+{% endblock %}
+{% block content %}
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="one">
+            <h1>Upload Files</h1>
+            <label for="">Choose file</label>
+            <input type="file" name="file" accepts=".jpg,.png,.txt,.docx,.doc" multiple required placeholder="select File" /> <br>
+            <button type="submit" value="upload">submit</button>
+        </div>
+    </form>
+

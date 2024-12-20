@@ -1,0 +1,47 @@
+{% extends 'dashboard.html' %}
+    <!-- <style>
+        body{
+            background: url('https://img.freepik.com/free-vector/add-user-concept-illustration_114360-557.jpg?t=st=1733560604~exp=1733564204~hmac=c25df5e420ed2d9eccbf2874c99871c1429ef7cc4b724d47b9d90a07f18e10ee&w=740');
+        }
+        .one{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        .input {
+            margin-top: 5%;
+        }
+        .one input {
+            background-color: rgb(193, 197, 186);
+            border-radius: 12px;
+        }
+        button{
+            border-radius: 15px;
+            color: grey;
+            background-color: pink;
+            box-shadow: 3px;
+        }
+        button:hover{
+            color: whitesmoke;
+            
+        }
+    </style> -->
+{% block content %}
+
+
+    <form method="POST">
+        <div class="one">
+            <h1>ADD</h1>
+            <label>Title</label>
+            <input type="text" placeholder="your book title" name="title"> <br>
+            <label class="two">Description</label>
+            <!-- <input type="text" placeholder="Enter your Description" name="content"> -->
+            <textarea name="content" placeholder="text here" id=""></textarea> <br>
+            <button type="submit">submit</button>
+
+        </div>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://img.freepik.com/free-vector/empty-template-with-plants-ballpen_1308-82592.jpg?ga=GA1.1.693654004.1703757557&semt=ais_hybrid);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            padding-top: 25px;
+            text-align: center;
+        }
+        center{
+            padding: 50px;
+        }
+        button{
+        margin-top: 50px;
+        color: black;
+        background-image: linear-gradient(#f0e2ec, #be2c40);
+        width: 130px;
+        height: 45px;
+        border-width: 0;
+        border-radius: 8px;
+        margin-right: 10px;
+        border: 1px solid black;
+    }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome Page
+    </h1>
+        <center>
+            <a href="{{url_for('create')}}"><button type="submit">create</button></a>
+            <a href="{{url_for('login')}}"><button type="submit">login</button></a>
+        <center>
+    
+</body>
+</html>
+
